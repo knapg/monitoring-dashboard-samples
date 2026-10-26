@@ -28,6 +28,17 @@ sample_dashboards:
         platform: GCP
   -
     category: Cloud Vertex AI
+    id: vertex-ai-agent-engine-efficiency
+    display_name: Vertex AI Agent Engine ADK Agent Efficiency
+    description: |-
+     This is a dashboard for monitoring the efficiency of [ADK](https://adk.dev/) agents deployed onto Vertex AI Agent Engine: token usage by type, context cache reuse, reasoning share, model and tool calls, and latency, per turn, per agent and per model.
+
+     Requires ADK experimental telemetry (ADK_EXPERIMENTAL_TELEMETRY=true) with Agent Engine telemetry enabled.
+    related_integrations:
+      - id: vertex_ai
+        platform: GCP
+  -
+    category: Cloud Vertex AI
     id: vertex-ai-custom-training
     display_name: Vertex AI Custom Training
     description: |-

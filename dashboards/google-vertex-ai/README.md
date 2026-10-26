@@ -25,3 +25,8 @@
 |Filename: [vertex-ai-provisioned-throughput.json](vertex-ai-provisioned-throughput.json)|
 |This is a dashboard for monitoring utilization of Provisioned Throughput associated with Vertex AI models. |
 
+|Vertex AI Agent Engine ADK Agent Efficiency|
+|:------------------|
+|Filename: [vertex-ai-agent-engine-efficiency.json](vertex-ai-agent-engine-efficiency.json)|
+|This is a dashboard for monitoring the efficiency of [ADK](https://adk.dev/) agents deployed onto Vertex AI Agent Engine: token usage by type, context cache reuse, reasoning share, model and tool calls, and latency, per turn, per agent and per model. Requires ADK experimental telemetry (`ADK_EXPERIMENTAL_TELEMETRY=true`) with Agent Engine telemetry enabled. |
+
