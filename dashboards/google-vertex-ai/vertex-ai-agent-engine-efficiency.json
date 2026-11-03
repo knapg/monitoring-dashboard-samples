@@ -16,7 +16,7 @@
         "height": 10,
         "widget": {
           "text": {
-            "content": "**Requires ADK experimental telemetry.** Most charts read `adk.experimental.*` metrics, which ADK emits only when the agent runs with `ADK_EXPERIMENTAL_TELEMETRY=true` and Agent Engine telemetry is on (`GOOGLE_CLOUD_AGENT_ENGINE_ENABLE_TELEMETRY=true`, or `adk deploy agent_engine --otel_to_cloud`). Without both, the dashboard stays empty. Experimental metric names can change between ADK releases.\n\nPick the agent with the **agent** filter (its Agent Engine ID). Charts show means per time step; the pie shows totals for the selected range.\n\n- **Turn**: one user message, through to the final response.\n- **Agent invocation**: one run of an agent during a turn. Per-turn counts exclude the root agent.\n- **Cached input** is part of input, and **reasoning** is part of output.",
+            "content": "**Requires `google-adk` 2.8.0 or later with experimental telemetry.** Most charts read `adk.experimental.*` metrics, which ADK emits only when the agent runs with `ADK_EXPERIMENTAL_TELEMETRY=true` and Agent Engine telemetry is on (`GOOGLE_CLOUD_AGENT_ENGINE_ENABLE_TELEMETRY=true`, or `adk deploy agent_engine --otel_to_cloud`). Without both, the dashboard stays empty. Experimental metric names can change between ADK releases.\n\nPick the agent with the **agent** filter (its Agent Engine ID). Charts show means per time step; the pie shows totals for the selected range.\n\n- **Turn**: one user message, through to the final response.\n- **Agent invocation**: one run of an agent during a turn. Per-turn counts exclude the root agent.\n- **Cached input** is part of input, and **reasoning** is part of output.",
             "format": "MARKDOWN",
             "style": {}
           }
@@ -122,7 +122,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean tokens per turn — by token type",
+          "title": "Mean tokens per turn by token type",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -149,7 +149,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean calls per turn — model vs tool",
+          "title": "Mean model and tool calls per turn",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -176,7 +176,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Turn latency — p50 vs p95",
+          "title": "Turn latency p50 and p95",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -204,7 +204,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Cache-read ratio — all agents",
+          "title": "Cache-read ratio (all agents)",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -231,7 +231,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Reasoning share — all agents",
+          "title": "Reasoning share (all agents)",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -259,7 +259,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean tool executions per turn — by tool",
+          "title": "Mean tool executions per turn by tool",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -286,7 +286,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean tool seconds per turn — by tool",
+          "title": "Mean tool seconds per turn by tool",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -325,7 +325,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean tokens per agent invocation — by agent",
+          "title": "Mean tokens per agent invocation by agent",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -352,7 +352,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean model calls per agent invocation — by agent",
+          "title": "Mean model calls per agent invocation by agent",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -379,7 +379,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean tool calls per agent invocation — by agent",
+          "title": "Mean tool calls per agent invocation by agent",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -407,7 +407,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Agent latency p95 — by agent",
+          "title": "Agent latency p95 by agent",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -434,7 +434,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean input tokens per agent invocation — by agent",
+          "title": "Mean input tokens per agent invocation by agent",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -462,7 +462,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Cache-read ratio — by agent",
+          "title": "Cache-read ratio by agent",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -489,7 +489,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Reasoning share — by agent",
+          "title": "Reasoning share by agent",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -528,7 +528,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean model calls per turn — by model",
+          "title": "Mean model calls per turn by model",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -555,7 +555,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean tokens per turn — by model",
+          "title": "Mean tokens per turn by model",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -583,7 +583,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Mean tokens per model call — by model",
+          "title": "Mean tokens per model call by model",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -610,7 +610,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Model call latency p95 — by model",
+          "title": "Model call latency p95 by model",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -649,7 +649,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Tool latency p95 — by tool",
+          "title": "Tool latency p95 by tool",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -676,7 +676,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Tool executions per second — by tool",
+          "title": "Tool executions per second by tool",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -704,7 +704,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Tokens over time — by token type",
+          "title": "Tokens over time by token type",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -731,7 +731,7 @@
       {
         "height": 16,
         "widget": {
-          "title": "Cumulative tokens — by token type",
+          "title": "Cumulative tokens by token type",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
